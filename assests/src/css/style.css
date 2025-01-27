@@ -365,16 +365,17 @@ input[type="submit"]:hover {
 
 /*Footer*/
 
-footer{
-    width:100%;
-    background-color: #F58734;
-    font-family: "Montserrat" sans-serif;
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #D9D9D9; /* Cor do texto */
+    font-size: 16px;
+    background-color: #F58734; /* Caso queira mudar o fundo do footer também */
 }
 
 footer .linha1{
+    align-items: center;
     display:flex;
     justify-content: space-around;
-    align-items: center;
     font-family: "Montserrat" sans-serif;
 }
 
@@ -386,14 +387,16 @@ footer ul{
 }
 
 footer nav{
+    align-items: center;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
     height: 330px;
 }
 
 footer h5{
+    align-items: center;
     text-align: center;
     color: #F7F7F7;
     font-weight: 800;
