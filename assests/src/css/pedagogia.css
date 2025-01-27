@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +10,44 @@ header img {
     width: 100%;
 }
 
+#menu {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*WhatsApp*/
+
+whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-icon {
+    width: 70px;
+    height: 70px;
+  }
+
 /*Footer*/
 
 footer{
     width:100%;
-    background-color: #F58734;
+    background-color: #011F5B;
     font-family: "Montserrat" sans-serif;
 }
 
@@ -40,7 +75,7 @@ footer nav{
 
 footer h5{
     text-align: center;
-    color: #F7F7F7;
+    color: #F58734;
     font-weight: 800;
     font-size: 18px;
     font-family:"Montserrat" sans-serif;            
@@ -67,7 +102,7 @@ footer ul li a{
 }
 
 footer ul li a:hover{
-    color: #011F5B;
+    color: #F58734;
 }
 
 footer .endereco{
@@ -101,5 +136,5 @@ footer .linha2 a:first-child{
 }
 
 footer .linha2 a:hover{
-    color:#011F5B;
+    color:#F58734;
 }
