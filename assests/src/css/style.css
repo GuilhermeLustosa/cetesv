@@ -112,10 +112,9 @@ button #button-portal {
 /*Missão, Visão e Valores*/
 section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
 
     background-color: #08B0EE;
     border: 1px solid red;
@@ -209,7 +208,7 @@ h2 .highlight {
 .content {
     display: flex;
     align-items: center;  /* Alinha a imagem e o texto ao centro verticalmente */
-    gap: 20px;
+    gap: 100px;
     justify-content: center;
     max-width: 1200px;
     width: 100%;
