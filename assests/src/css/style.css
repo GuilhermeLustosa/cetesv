@@ -461,3 +461,28 @@ footer .linha2 a:first-child{
 footer .linha2 a:hover{
     color:#011F5B;
 }
+whatsapp-button {
+    justify-content: right;
+    align-items: right;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+    .whatsapp-icon {
+    width: 70px;
+    height: 70px;
+    margin-left:95%;
+}
