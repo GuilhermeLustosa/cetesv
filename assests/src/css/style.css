@@ -462,6 +462,7 @@ footer .linha2 a:hover{
     color:#011F5B;
 }
 whatsapp-button {
+    position: fixed;
     justify-content: right;
     align-items: right;
     bottom: 20px;
