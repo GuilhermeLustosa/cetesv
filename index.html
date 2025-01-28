@@ -6,6 +6,8 @@
     <title>CETESV</title>
     <link rel="stylesheet" href="assests/src/css/style.css">
     <link rel="stylesheet" href="assests/src/js/script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" >
 
 </head>
 <body>
@@ -19,18 +21,22 @@
         </div>
         <button type="button"><a id="button-portal" href="https://educacional.usecerbrum.net" target="_blank">Portal Universitario</a></button>
     </nav>
- <!--Conteudo Principal da Pagina-->
+    <!--Conteudo Principal da Pagina-->
 
-    <header>
-        <div id="content">
-             <a href="pedagogia.html"> <img class="pedagogia" src="assests/src/img/pedagogia.svg" alt="Licenciatura em Pedagogia"> </a>
+    <div class="carousel">
+        <div class="carousel-item">
+            <a href="historia.html"><img src="assests/src/img/historia.svg" alt="historia" /></a>
         </div>
-    </header>
+        <div class="carousel-item">
+            <a href="pedagogia.html"><img src="assests/src/img/pedagogia.svg" alt="pedagogia" /></a>
+        </div>
+    </div>
+
     <!--Missa, Visão e Valores da CETESV-->
     <section>
             <div id="missao" class="mvv">
-             <h2>Missão</h2>
-             <h5>Fornecer uma formação integral aos alunos, de forma <br>
+            <h2>Missão</h2>
+            <h5>Fornecer uma formação integral aos alunos, de forma <br>
                 a que tornem cidadãos capazes de transformar a sociedade.</h5>
             </div>
             <div id="visao" class="mvv">
@@ -64,15 +70,15 @@
             <form action="https://formspree.io/f/mdkaejyo" method="POST">
             <div class="form-group">
                 <label>Nome:</label>
-                <input type="text" placeholder="Insira seu nome aqui">
+                <input name="Nome" id="nome" type="text" placeholder="Insira seu nome aqui">
             </div>
 
             <div class="form-group">
                 <label>Sobrenome:</label>
-                <input type="text" placeholder="Insira seu sobrenome aqui">
+                <input name="Sobrenome" id="sobrenome" type="text" placeholder="Insira seu sobrenome aqui">
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label>Área de Interesse:</label>
                 <div class="checkbox-itens">
                     <input type="checkbox" value="pedagogia">
@@ -84,16 +90,16 @@
                     <input type="checkbox" value="historia">
                     <label>História</label>
                 </div>                
-            </div>
+            </div> -->
 
             <div class="form-group">
                 <label>Email:</label>
-                <input type="email" placeholder="Insira seu e-mail aqui">
+                <input name="Email" id="email" type="email" placeholder="Insira seu e-mail aqui">
             </div>
 
             <div class="form-group">
                 <label>Telefone:</label>
-                <input type="text" placeholder="(99) 99999-9999">
+                <input name="Telefone" id="telefone" type="text" placeholder="(99) 99999-9999">
             </div>
 
             <input type="submit" value="Cadastrar">
@@ -102,38 +108,52 @@
 
     </section>
 
- <!--FOOTER-->
+<!--FOOTER-->
     <footer>
-    <div class="linha1">
-        <nav>
-            <h5>Graduações</h5>
-            <ul>
-                <li><a href="historia.html">Licenciatura em História</a></li>
-                <li><a href="pedagogia.html">Licenciatura em Pedagogia</a></li>
-                <li><a href="enfermagem.html">Técnico em Enfermagem</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h5>Sobre a CETESV</h5>
-            <ul>
-                <li><a href="#faculdade">Sobre Nós</a></li>
-                <li><a href="#missao">Missão e Valores</a></li>
-                <li><a href="">Trabalhe Conosco</a></li>
-            </ul>
-        </nav>
-        <div class="endereco">
-            © 2025 CETESV - Centro de Ensino Técnico e Superior Vianense | CNPJ: 41.675.468/0001-63 | Rua Estrada Velha, s/n | bairro Jardim tropical | Viana-Ma | CEP 65.215-000
+        <div class="linha1">
+            <nav>
+                <h5>Graduações</h5>
+                <ul>
+                    <li><a href="historia.html">Licenciatura em História</a></li>
+                    <li><a href="pedagogia.html">Licenciatura em Pedagogia</a></li>
+                    <li><a href="enfermagem.html">Técnico em Enfermagem</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h5>Sobre a CETESV</h5>
+                <ul>
+                    <li><a href="#faculdade">Sobre Nós</a></li>
+                    <li><a href="#missao">Missão e Valores</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+            <div class="endereco">
+                © 2025 CETESV - Centro de Ensino Técnico e Superior Vianense | CNPJ: 41.675.468/0001-63 | Rua Estrada Velha, s/n | bairro Jardim tropical | Viana-Ma | CEP 65.215-000
+            </div>
         </div>
-    </div>
-    <a href="https://wa.me/5598991918836" target="_blank" class="whatsapp-button" aria-label="Chat on WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
-    </a>
-    <div class="linha2">
-        <a href="">Termos de Uso</a>
-        <a href="">Política de Privacidade</a>
-    </div>
-</footer>
+        <a href="https://wa.me/5598991918836" target="_blank" class="whatsapp-button" aria-label="Chat on WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+        </a>
+        <div class="linha2">
+            <a href="">Termos de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </div>
+    </footer>
 
     
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script>
+        $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000, // Muda a imagem a cada 3 segundos
+        });
+    </script>
 </body>
 </html>
