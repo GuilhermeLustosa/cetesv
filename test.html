@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CETESV</title>
     <link rel="stylesheet" href="assests/src/css/style.css">
-    <link rel="stylesheet" href="assests/src/js/script.js">
 
 </head>
 <body>
@@ -22,9 +21,33 @@
  <!--Conteudo Principal da Pagina-->
 
     <header>
-        <div id="content">
-             <a href="pedagogia.html"> <img class="pedagogia" src="assests/src/img/pedagogia.svg" alt="Licenciatura em Pedagogia"> </a>
+        <div class="slider">
+
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+            </div>
+
+            <div class="slide firts">
+                <img src="assests/src/img/historia.svg" alt="Graduação em História">
+            </div>
+
+            <div class="slide">
+                <img src="assests/src/img/pedagogia.svg" alt="Graduação em Pedagogia">
+            </div>
+            <!--fim dos slides-->
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
         </div>
+
     </header>
     <!--Missa, Visão e Valores da CETESV-->
     <section>
@@ -134,6 +157,7 @@
     </div>
 </footer>
 
+<script src="assests/src/js/script.js"></script>
     
 </body>
 </html>
