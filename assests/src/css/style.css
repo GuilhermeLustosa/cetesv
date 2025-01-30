@@ -12,7 +12,7 @@ body {
 }
  /*Parte da Menu de Navegação*/
 #principal {
-    width: 100%;
+    width: 102%;
     height: 200px;
 
     background-color: #F7F7F7;
@@ -33,9 +33,9 @@ body {
 
 #menu {
     display: flex;
-    width: 60%;
+    width: 76%;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 6rem;
     align-items: center;
 }
 
