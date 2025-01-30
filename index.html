@@ -18,6 +18,23 @@
             <a href="#carousel">Cursos</a>
             <a href="#faculdade">Sobre Nós</a>
             <a href="https://portal.dli.minhabiblioteca.com.br/Login.aspx?key=CETESV" target="_blank">Biblioteca</a>
+            <div class="links-uteis">
+                <select name="linksuteis" id="linksuteis">links
+                    <option value="">Acesso Rápido</option>
+                    <option value="" style="color:white;font-size:25px;background-color:#08B0EE;font-weight:bold;">PERIÓDICO NACIONAIS:</option>
+                    <option value="https://seer.ufu.br/index.php/artcultura/issue/view/2456">ArtCultura</option>
+                    <option value="http://www.scielo.br/j/rbedu">Revista Brasileira de Educação - RBE</option>
+                    <option value="https://publicacoes.fcc.org.br/cp">Caderno de Pesquisas</option>
+                    <option value="https://www.scielo.br/j/es/">Revista Educação & Sociedade</option>
+                    <option value="https://revistas.ufpr.br/educar">Eucar em Revista</option>
+                    <option value="https://www.scielo.br/j/ep/">Revista Educação e Pesquisa</option>
+                    <option value="https://www.revistas2.uepg.br/index.php/praxiseducativa">Práxis Educativa</option>
+                    <option value="" style="color:white;font-size:25px;background-color:#08B0EE;font-weight:bold;">PERIÓDICO INTERNACIONAIS:</option>
+                    <option value="https://www.journals.elsevier.com/international-journal-of-educational-research">International Journal of Educational Research (IJER)</option>
+                    <option value="https://onlinelibrary.wiley.com/journal/14653435">European Journal of Education</option>
+                    <option value="http://ijedict.dec.uwi.edu/">International Journal of Education and Development using Information and Communication Technology (IJEDICT)</option>
+                </select>
+            </div>
         </div>
         <button type="button"><a id="button-portal" href="https://educacional.usecerbrum.net" target="_blank">Portal Universitario</a></button>
     </nav>
@@ -149,6 +166,14 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000, // Muda a imagem a cada 3 segundos
+        });
+
+        document.getElementById('linksuteis').addEventListener('change', function() {
+            var url = this.value;
+            if (url) {
+                window.location.href = url;
+                this.value = ""; // Redefine o valor do select para "Acesso Rápido"
+            }
         });
     </script>
 </body>
