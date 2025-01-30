@@ -35,7 +35,7 @@ body {
     display: flex;
     width: 80%;
     justify-content: space-around;
-    gap: 6rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -61,6 +61,16 @@ body {
     text-decoration: none;
 
     color: #011F5B;
+
+    border: none;
+    background-color: transparent;
+    width: 35%;
+}
+
+#principal div option {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
 
     border: none;
     background-color: transparent;
